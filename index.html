@@ -2,6 +2,10 @@
 <html lang="pt-br">
 <head>
 <meta charset="UTF-8">
+
+<!-- 📱 Ajuste para celular -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>ViniBet - Jogo de Pontos</title>
 
 <style>
@@ -22,12 +26,16 @@
         to   { text-shadow: 0 0 20px #ffaa00; }
     }
 
+    /* 📱 RESPONSIVO */
     .container {
         margin-top: 50px;
         background: #222;
         padding: 20px;
         border-radius: 15px;
-        display: inline-block;
+        display: block;
+        max-width: 90%;
+        margin-left: auto;
+        margin-right: auto;
         box-shadow: 0 0 20px #000;
         transition: transform 0.3s;
     }
@@ -67,6 +75,7 @@
     #pontos {
         transition: color 0.3s, transform 0.3s;
     }
+
 </style>
 </head>
 
@@ -90,7 +99,7 @@ margin:auto;font-size:18px;font-weight:bold;border:2px solid #00ff37;text-align:
   👤 Online agora: <span id="onlineCounter">0</span>
 </div>
 
-<!-- JOGO -->
+<!-- 🕹 JOGO -->
 <script>
     let pontos = 100;
 
@@ -125,7 +134,7 @@ margin:auto;font-size:18px;font-weight:bold;border:2px solid #00ff37;text-align:
     }
 </script>
 
-<!-- Firebase -->
+<!-- 🔥 Firebase -->
 <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
 <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
 
@@ -162,3 +171,4 @@ margin:auto;font-size:18px;font-weight:bold;border:2px solid #00ff37;text-align:
 
 </body>
 </html>
+
